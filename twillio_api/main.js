@@ -6,7 +6,7 @@ const authToken = '04184a719c52a0bccba4ba217034c714';
 const client = require('twilio')(accountSid, authToken);
 const getGIF = require('../giphy_api/main');
 
-app.post("/sms", (request, response)=> {
+router.post("/sms", (request, response)=> {
     console.log(request.body);
     let toUser = request.body.From;
     let text = request.body.Body;

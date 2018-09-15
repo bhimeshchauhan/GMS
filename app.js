@@ -20,13 +20,13 @@ const listener = app.listen(port, ()=> {
     console.log('Your app is listening on port ' + listener.address().port);
 });
 //  Giphy part
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    console.log("the data is ", myModule.testRoute());
-    res.write(myModule.testRoute());
-    res.end();
-}).listen(3000);
-
-server.listen(port, hostname, () => {
-    console.log("The server is running at http://",hostname,":",port);
-});
+// const server = http.createServer((req, res) => {
+//     res.writeHead(200, {'Content-Type': 'text/html'});
+//     console.log("the data is ", myModule.testRoute());
+//     res.write(myModule.testRoute());
+//     res.end();
+// }).listen(3000);
+//
+// server.listen(port, hostname, () => {
+//     console.log("The server is running at http://",hostname,":",port);
+// });
