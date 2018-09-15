@@ -6,7 +6,8 @@ var myModule = require('./giphy_api/main.js');
 
 
 const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    console.log("the data is ", myModule.testRoute());
     res.write(myModule.testRoute());
     res.end();
 }).listen(3000);
