@@ -1,12 +1,12 @@
-var jsdom = require("jsdom");
+const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const { window } = new JSDOM();
 const { document } = (new JSDOM('')).window;
 global.document = document;
 
-var $ = jQuery = require('jquery')(window);
-var thisurl = "";
-var mainModule = {
+const $ = jQuery = require('jquery')(window);
+let thisurl = "";
+const mainModule = {
     testRoute : function(){
         var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=NeKcfPijq0J4r3I7T5AV2j65DWdZOjro&limit=5");
         xhr.done(function(data) {
