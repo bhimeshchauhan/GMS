@@ -10,6 +10,6 @@ email: bhimeshchauhan@gmail.com
 
 
 ![](./twif.png)
-<img src="output.gif" width="400px" height="500px"/>
+<img src="output.gif" width="410px" height="500px"/>
 <br/>
 At this point of time this works only on two phones. Get in touch to see or in the gif below. Haha!
