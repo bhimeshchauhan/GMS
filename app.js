@@ -1,13 +1,17 @@
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = 3000;
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const path = require('path');
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.write('this works');
-    res.end();
-}).listen(3000);
+const twilioRouter = require('./twillio_api/main');
 
-server.listen(port, hostname, () => {
-    console.log("The server is running at http://${hostname}:${port}/");
+app.use(express.json());
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/twilio',twilioRouter);
+
+const port = process.env.PORT || 3000;
+const listener = app.listen(port, ()=> {
+    console.log('Your app is listening on port ' + listener.address().port);
 });
