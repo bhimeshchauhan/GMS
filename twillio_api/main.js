@@ -10,11 +10,13 @@ router.post("/sms", (request, response)=> {
     let toUser = request.body.From;
     let text = request.body.Body;
     let gifURL = getGIF.giphy(text);
+    console.log("url is ", gifURL);
     client.messages
         .create({
             body: '',
             from: '+15055877894',
             mediaUrl: gifURL,
+            contentType: 'image/gif',
             to: toUser
         })
         .then(message => console.log(message.sid))
