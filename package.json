@@ -4,6 +4,7 @@
   "description": "Get random gif by texting the string to a number",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "test gift"
   },
   "repository": {
