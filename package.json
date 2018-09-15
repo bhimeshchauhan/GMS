@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/bhimeshchauhan/GIFt/issues"
   },
-  "homepage": "https://github.com/bhimeshchauhan/GIFt#readme"
+  "homepage": "https://github.com/bhimeshchauhan/GIFt#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "twilio": "^3.19.2"
+  }
 }
