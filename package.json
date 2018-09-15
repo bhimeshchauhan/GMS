@@ -25,7 +25,12 @@
   },
   "homepage": "https://github.com/bhimeshchauhan/GIFt#readme",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.16.3",
     "twilio": "^3.19.2"
+=======
+    "jquery": "^3.3.1",
+    "jsdom": "^12.0.0"
+>>>>>>> e29dc3834e493d2b2806076d512844caf03205ba
   }
 }
