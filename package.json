@@ -1,0 +1,26 @@
+{
+  "name": "gift",
+  "version": "1.0.0",
+  "description": "\"Get random gif by texting the string to a number\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "test gift"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhimeshchauhan/GIFt.git"
+  },
+  "keywords": [
+    "\"gif\"",
+    "\"giphy\"",
+    "\"twillio\"",
+    "\"gif",
+    "fun\""
+  ],
+  "author": "bhimesh chauhan & vaibhav malhotra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhimeshchauhan/GIFt/issues"
+  },
+  "homepage": "https://github.com/bhimeshchauhan/GIFt#readme"
+}
